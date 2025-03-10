@@ -169,6 +169,13 @@ class WorkOrderApp:
 
         print(f"Data loaded from {filename} successfully!")
 
+        def clear_blank_rooms(self):
+            # Clear all rooms with no room_name
+            for room in self.rooms:
+                if room.get_data = None:
+                    room.destroy()
+
+
 if __name__ == "__main__":
     root = tk.Tk()
     app = WorkOrderApp(root)
